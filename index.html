@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Northeast Airlines</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="headerContainer">
+                <div class="material-symbols-outlined">explore</div>
+                <div>Northeast Airlines</div>
+            </div>
+            <div class="links">
+                <div class="link">Car Rental</div>
+                <div class="link">Lodging</div>
+                <div class="link">Rewards</div>
+                <button class="buttonBase secondaryButton" onclick="completeAction()">Log in</button>
+            </div>
+        </nav>
+        <section class="content">
+            <div class="bannerContainer">
+                <div class="banner">
+                    <div class="bannerOverlay"></div>
+                    <img alt="New Zealand" class="bannerImage" src="images/new-zealand.jpg"/>
+                </div>
+            </div>
+            <div class="salesContainer">
+                <div>
+                    <div class="saleAmount">$199<span class="saleText"> off international flights!</span></div>
+                    <div class="saleAmount">$999<span class="saleText"> off all Boeing 737 flights!</span></div>
+                </div>
+                <div class="saleSubText">Restrictions apply. 2 ticket maximum.</div>
+                <button class="saleButton buttonBase secondaryButton" onclick="completeAction()">Book now</button>
+            </div>
+            <div class="containerRow">
+                <div class="container flightsContainer">
+                    <div class="containerTitle">
+                        <div class="containerTitleText">Find Flights</div>
+                        <div class="material-symbols-outlined">travel</div>
+                    </div>
+                    <form name="flightForm" onsubmit="return completeAction()">
+                        <div class="formContent">
+                            <div>
+                                <div class="formField">
+                                    <label class="labelText" for="depart">Depart:</label>
+                                    <input class="formTextField" type="text" name="depart" required />
+                                </div>
+                                <div class="formField">
+                                    <label class="labelText" for="arrive">Arrive:</label>
+                                    <input class="formTextField" type="text" name="arrive" required />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="formField">
+                                    <label class="labelText" for="departDate">Depart Date:</label>
+                                    <input class="formTextField" type="date" name="departDate" required />
+                                </div>
+                                <div class="formField">
+                                    <label class="labelText" for="returnDate">Return Date:</label>
+                                    <input class="formTextField" type="date" name="returnDate" required />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="formField">
+                                    <label class="labelText" for="passengers">Passengers:</label>
+                                    <input class="formTextField passengersTextField" type="number" name="passengers" required />
+                                </div>
+                                <div class="formRadio">
+                                    <input type="radio" id="oneWay" name="flightType" value="oneWay">
+                                    <label class="labelText" for="oneWay">One way</label><br>
+                                    <input type="radio" id="roundTrip" name="flightType" value="roundTrip">
+                                    <label class="labelText" for="roundTrip">Round trip</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formActions">
+                            <input class="buttonBase primaryButton" type="submit" value="Search">
+                        </div>
+                    </form>
+                </div>
+                <div class="container rewardsContainer">
+                    <div class="containerTitle">
+                        <div class="containerTitleText">Loyalty Rewards</div>
+                        <div class="material-symbols-outlined">paid</div>
+                    </div>
+                    <div class="rewards">
+                        <div class="rewardsList">
+                            <div class="rewardsText">Save <span class="rewardsAmount">12%</span> on business class</div>
+                            <div class="rewardsText">Save <span class="rewardsAmount">25%</span> on checked baggage</div>
+                            <div class="rewardsText">Save <span class="rewardsAmount">80%</span> on all Boeing 737 flights</div>
+                        </div>
+                        <img alt="Rewards" class="rewardsImage" src="images/rewards.png"/>
+                    </div>
+                    <div class="rewardsButton">
+                        <button class="buttonBase primaryButton" onclick="completeAction()">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container fullWidthContainer">
+                <div class="containerTitle">
+                    <div class="containerTitleText">Featured Destinations</div>
+                    <div class="material-symbols-outlined">location_on</div>
+                </div>
+                <div class="cities">
+                    <div class="city">
+                        <div>
+                            <div class="cityName">London</div>
+                            <div class="cityDescription">London is the capital and largest city of England, and the United Kingdom, with a population of around 8.8 million, and the largest city in Western Europe by metropolitan area, with a population of 14.8 million.</div>
+                        </div>
+                        <img alt="London" class="cityImage" src="images/london.jpg"/>
+                    </div>
+                    <div class="city">
+                        <div>
+                            <div class="cityName">Paris</div>
+                            <div class="cityDescription">Paris is the capital and most populous city of France. Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, culture, fashion, and gastronomy. For its leading role in the arts and sciences, as well as its early and extensive system of street lighting, in the 19th century, it became known as the City of Light.</div>
+                        </div>
+                        <img alt="Paris" class="cityImage" src="images/paris.jpg"/>
+                    </div>
+                    <div class="city">
+                        <div>
+                            <div class="cityName">Rome</div>
+                            <div class="cityDescription">Rome is the capital city of Italy. Rome is located in the central-western portion of the Italian Peninsula, within Lazio, along the shores of the Tiber. Vatican City (the smallest country in the world) is an independent country inside the city boundaries of Rome, the only existing example of a country within a city.</div>
+                        </div>
+                        <img alt="Rome" class="cityImage" src="images/rome.jpg"/>
+                    </div>
+                    <div class="city">
+                        <div>
+                            <div class="cityName">Venice</div>
+                            <div class="cityDescription">Venice is a city in northeastern Italy and the capital of the Veneto region. It is built on a group of 126 islands that are separated by expanses of open water and by canals; portions of the city are linked by 472 bridges. The islands are in the shallow Venetian Lagoon, an enclosed bay lying between the mouths of the Po and the Piave rivers.</div>
+                        </div>
+                        <img alt="Venice" class="cityImage" src="images/venice.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="footerContainer">
+                <div>
+                    <div class="footerText"><span>&copy;</span> 2024 Northeast Airlines Co. All Rights Reserved.</div>
+                    <div class="disclaimerText">We sell your personal data for profit.</div>
+                </div>
+                <div class="contactUs">Contact Us: <span class="footerEmail">service@northeastairlines.com</span></div>
+            </div>
+        </section>
+    </body>
+</html>

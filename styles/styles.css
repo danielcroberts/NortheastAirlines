@@ -1,0 +1,309 @@
+@import "colors.css";
+@import "controls.css";
+
+body {
+    background-color: var(--grey100);
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navigation {
+    background-color: var(--primary800);
+    color: var(--primary100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space12);
+    text-align: center;
+    width: calc(100% - var(--space24));
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    gap: var(--space16);
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.headerContainer {
+    align-items: center;
+    display: flex;
+    gap: var(--space4);
+    font-size: var(--font32);
+    line-height: 1;
+
+    .material-symbols-outlined {
+        font-size: var(--font32);
+        font-weight: 600;
+    }
+}
+
+.content {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space16);
+
+    height: calc(100vh - 56px);
+    overflow: auto;
+}
+
+.bannerContainer {
+    position: absolute;
+    width: 100%;
+    max-width: 2000px;
+    z-index: -1;
+}
+
+.banner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.bannerImage {
+    height: auto;
+    max-height: 800px;
+    width: 100%;
+}
+
+.bannerOverlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100% - var(--space4));
+    width: 100%;
+}
+
+.salesContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 0;
+}
+
+.saleAmount {
+    color: var(--textlight);
+    font-size: var(--font56);
+    font-weight: 600;
+}
+
+.saleButton {
+    margin-top: var(--space16);
+}
+
+.saleText {
+    color: var(--textlight);
+    font-size: var(--font32);
+}
+
+.saleSubText {
+    color: var(--textlight);
+    font-size: var(--font14);
+}
+
+.containerRow {
+    display: flex;
+    gap: var(--space16);
+    width: 90%;
+    max-width: calc(1000px + var(--space20) + var(--space20));
+}
+
+.container {
+    background-color: white;
+    border-radius: 4px;
+    border-top: 4px solid var(--primary600);
+    box-shadow: var(--elevation1Light);
+    padding: var(--space12);
+}
+
+.containerTitle {
+    align-items: center;
+    display: flex;
+    gap: var(--space4);
+    margin-bottom: var(--space12);
+    color: var(--primary700);
+    font-size: var(--font24);
+    font-weight: 600;
+
+    .material-symbols-outlined {
+        font-size: var(--font24);
+        font-weight: 600;
+    }
+}
+
+.fullWidthContainer {
+    width: calc(90% - var(--space20) - var(--space20));
+    max-width: 1000px;
+    padding: var(--space12) var(--space20);
+}
+
+.flightsContainer {
+    width: calc(50% - var(--space12) - var(--space12));
+}
+
+.rewardsContainer {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - var(--space12) - var(--space12) - var(--space16));
+}
+
+.cities {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space12);
+}
+
+.city {
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid var(--grey100);
+    box-shadow: var(--elevation2Light);
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space12);
+    padding: var(--space12);
+}
+
+.city:hover {
+    box-shadow: var(--elevation3Light);
+    border: 1px solid var(--grey200);
+    cursor: pointer;
+    background-color: var(--grey050);
+}
+
+.cityName {
+    font-size: var(--font20);
+    margin-bottom: var(--space8);
+}
+
+.cityDescription {
+    color: var(--textsub);
+    font-size: var(--font14);
+    max-width: 400px;
+}
+
+.cityImage {
+    border-radius: 4px;
+    height: auto;
+    width: 50%;
+}
+
+.formContent {
+    display: flex;
+    justify-content: center;
+    gap: var(--space32);
+    margin-bottom: var(--space12);
+}
+
+.formColumn {
+    width: 100px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space4);
+    margin-bottom: var(--space12);
+}
+
+.formRadio {
+    padding-top: var(--space16);
+}
+
+.formTextField {
+    border-top: 1px solid var(--grey200);
+    border-left: 1px solid var(--grey200);
+    border-right: 1px solid var(--grey200);
+    border-bottom: 1px solid var(--grey100);
+    height: var(--space32);
+    font-size: var(--font16);
+    box-shadow: inset 0 2px 2px 1px var(--grey300);
+}
+
+.passengersTextField {
+    max-width: 92px;
+}
+
+.labelText {
+    color: var(--textsub);
+    font-size: var(--font14);
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rewards {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rewardsList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space12);
+}
+
+.rewardsButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rewardsText {
+    color: var(--textmain);
+    font-size: var(--font14);
+}
+
+.rewardsAmount {
+    font-size: var(--font20);
+    font-weight: 600;
+}
+
+.rewardsImage {
+    border-radius: 4px;
+    height: auto;
+    max-height: 136px;
+    margin-bottom: var(--space12);
+}
+
+.footerContainer {
+    background-color: var(--primary800);
+    color: var(--primary100);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space12);
+    width: calc(100% - var(--space24));
+    margin-top: var(--space12);
+}
+
+.footerText {
+    font-size: var(--font14);
+}
+
+.disclaimerText {
+    color: var(--primary200);
+    font-size: var(--font12);
+    text-align: center;
+    font-style: italic;
+}
+
+.contactUs {
+    font-weight: 600;
+}
+
+.footerEmail {
+    font-weight: 400;
+}
+
+.footerEmail:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

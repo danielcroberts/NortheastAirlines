@@ -1,0 +1,46 @@
+@import "colors.css";
+
+.buttonBase {
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font16);
+    height: 32px;
+}
+
+.primaryButton {
+    background-color: var(--primary800);
+    border: none;
+    color: var(--primary100);
+    border-top: 1px solid var(--primary300);
+    box-shadow: var(--elevation1Light);
+}
+
+.primaryButton:hover {
+    background-color: var(--primary700);
+}
+
+.primaryButton:active {
+    box-shadow: none;
+    border-top: 1px solid var(--primary700);
+}
+
+.secondaryButton {
+    background-color: var(--primary300);
+    border: none;
+    color: var(--primary900);
+    border-top: 1px solid var(--primary100);
+    box-shadow: var(--elevation1Dark)
+}
+
+.secondaryButton:hover {
+    background-color: var(--primary200);
+}
+
+.secondaryButton:active {
+    box-shadow: none;
+    border-top: 1px solid var(--primary200);
+}
+
+input[type='radio'] {
+    accent-color: var(--primary600);
+}

@@ -1,0 +1,59 @@
+:root {
+    --grey050: hsl(240, 0%, 95%);
+    --grey100: hsl(240, 0%, 90%);
+    --grey200: hsl(240, 0%, 80%);
+    --grey300: hsl(240, 0%, 70%);
+    --grey400: hsl(240, 0%, 60%);
+    --grey500: hsl(240, 0%, 50%);
+    --grey600: hsl(240, 0%, 40%);
+    --grey700: hsl(240, 0%, 30%);
+    --grey800: hsl(240, 0%, 20%);
+    --grey900: hsl(240, 0%, 10%);
+
+    --primary050: hsl(120, 100%, 98%);
+    --primary100: hsl(120, 90%, 90%);
+    --primary200: hsl(120, 80%, 80%);
+    --primary300: hsl(120, 70%, 70%);
+    --primary400: hsl(120, 60%, 60%);
+    --primary500: hsl(120, 50%, 50%);
+    --primary600: hsl(120, 60%, 40%);
+    --primary700: hsl(120, 70%, 30%);
+    --primary800: hsl(120, 80%, 20%);
+    --primary900: hsl(120, 90%, 10%);
+
+    --secondary100: hsl(44, 38%, 96%);
+    --secondary200: hsl(44, 38%, 92%);
+    --secondary300: hsl(44, 38%, 88%);
+    --secondary400: hsl(44, 38%, 84%);
+    --secondary500: hsl(44, 38%, 80%);
+
+    --textmain: rgba(0, 0, 0, 0.87);
+    --textsub: rgba(0, 0, 0, 0.54);
+    --textlight: white;
+
+    --elevation1Light: 0 2px 2px 1px var(--grey300);
+    --elevation2Light: 0 3px 2px 2px var(--grey300);
+    --elevation3Light: 0 4px 3px 3px var(--grey400);
+
+    --elevation1Dark: 0 2px 2px 1px var(--grey800);
+    --elevation2Dark: 0 3px 2px 2px var(--grey800);
+    --elevation3Dark: 0 4px 3px 3px var(--grey900);
+
+    --font12: 12px;
+    --font14: 14px;
+    --font16: 16px;
+    --font20: 20px;
+    --font24: 24px;
+    --font32: 32px;
+    --font48: 48px;
+    --font56: 56px;
+
+    --space4: 4px;
+    --space8: 8px;
+    --space12: 12px;
+    --space16: 16px;
+    --space20: 20px;
+    --space24: 24px;
+    --space32: 32px;
+    --space48: 48px;
+}
