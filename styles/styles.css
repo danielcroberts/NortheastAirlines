@@ -18,10 +18,62 @@ body {
     width: calc(100% - var(--space24));
 }
 
+.compactNav {
+    display: none;
+
+    @media (max-width: 700px) {
+        display: block;
+        position: relative;
+    }
+}
+
+.menuIcon {
+    padding: var(--space4);
+    border-radius: 4px;
+}
+
+.menuIcon:hover {
+    @media (max-width: 700px) {
+        cursor: pointer;
+        color: var(--primary900);
+        background-color: var(--primary200);
+    }
+}
+
+.navDropdown {
+    background-color: white;
+    box-shadow: var(--elevation2Dark);
+    color: var(--textmain);
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 120px;
+    z-index: 1000;
+}
+
+.shown {
+    display: block;
+}
+
+.compactLink {
+    padding: var(--space12);
+}
+
+.compactLink:hover {
+    background-color: var(--grey100);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .links {
     align-items: center;
     display: flex;
     gap: var(--space16);
+
+    @media (max-width: 700px) {
+        display: none;
+    }
 }
 
 .link:hover {
@@ -84,12 +136,20 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10vh 0;
+
+    @media (max-width: 600px) {
+        margin: var(--space12) 0;
+    }
 }
 
 .saleAmount {
     color: var(--textlight);
     font-size: var(--font56);
     font-weight: 600;
+
+    @media (max-width: 600px) {
+        font-size: var(--font48);
+    }
 }
 
 .saleButton {
@@ -99,6 +159,10 @@ body {
 .saleText {
     color: var(--textlight);
     font-size: var(--font32);
+
+    @media (max-width: 600px) {
+        font-size: var(--font24);
+    }
 }
 
 .saleSubText {
@@ -111,6 +175,11 @@ body {
     gap: var(--space16);
     width: 90%;
     max-width: calc(1000px + var(--space20) + var(--space20));
+
+    @media (max-width: 1200px) {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .container {
@@ -144,12 +213,24 @@ body {
 
 .flightsContainer {
     width: calc(50% - var(--space12) - var(--space12));
+
+    @media (max-width: 1200px) {
+        width: calc(100% - var(--space20) - var(--space20));
+        max-width: 1000px;
+        padding: var(--space12) var(--space20);
+    }
 }
 
 .rewardsContainer {
     display: flex;
     flex-direction: column;
     width: calc(50% - var(--space12) - var(--space12) - var(--space16));
+
+    @media (max-width: 1200px) {
+        width: calc(100% - var(--space20) - var(--space20));
+        max-width: 1000px;
+        padding: var(--space12) var(--space20);
+    }
 }
 
 .cities {
@@ -185,6 +266,11 @@ body {
     color: var(--textsub);
     font-size: var(--font14);
     max-width: 400px;
+
+    @media (max-width: 700px) {
+        max-height: 80px;
+        overflow: hidden;
+    }
 }
 
 .cityImage {
@@ -198,10 +284,11 @@ body {
     justify-content: center;
     gap: var(--space32);
     margin-bottom: var(--space12);
-}
 
-.formColumn {
-    width: 100px;
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 0px;
+    }
 }
 
 .formField {
@@ -213,9 +300,13 @@ body {
 
 .formRadio {
     padding-top: var(--space16);
+
+    @media (max-width: 700px) {
+        padding-top: 0px;
+    }
 }
 
-.formTextField {
+.formInput {
     border-top: 1px solid var(--grey200);
     border-left: 1px solid var(--grey200);
     border-right: 1px solid var(--grey200);
@@ -223,6 +314,14 @@ body {
     height: var(--space32);
     font-size: var(--font16);
     box-shadow: inset 0 2px 2px 1px var(--grey300);
+}
+
+.locationTextField {
+    max-width: 200px;
+}
+
+.dateTextField {
+    max-width: 134px;
 }
 
 .passengersTextField {
@@ -271,6 +370,10 @@ body {
     height: auto;
     max-height: 136px;
     margin-bottom: var(--space12);
+
+    @media (max-width: 600px) {
+        max-height: 100px;
+    }
 }
 
 .footerContainer {
@@ -282,6 +385,12 @@ body {
     padding: var(--space12);
     width: calc(100% - var(--space24));
     margin-top: var(--space12);
+
+    @media (max-width: 600px) {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: var(--space12);
+    }
 }
 
 .footerText {

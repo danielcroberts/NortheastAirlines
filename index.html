@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Northeast Airlines</title>
+        <title>Northeastern Airlines</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="styles/styles.css" />
         <script src="index.js"></script>
@@ -11,13 +12,22 @@
         <nav class="navigation">
             <div class="headerContainer">
                 <div class="material-symbols-outlined">explore</div>
-                <div>Northeast Airlines</div>
+                <div>Northeastern Airlines</div>
             </div>
             <div class="links">
-                <div class="link">Car Rental</div>
-                <div class="link">Lodging</div>
-                <div class="link">Rewards</div>
+                <div class="link" onclick="completeAction()">Car Rental</div>
+                <div class="link" onclick="completeAction()">Lodging</div>
+                <div class="link" onclick="completeAction()">Rewards</div>
                 <button class="buttonBase secondaryButton" onclick="completeAction()">Log in</button>
+            </div>
+            <div class="compactNav" onclick="toggleNav()">
+                <div class="material-symbols-outlined menuIcon">menu</div>
+                <div class="navDropdown" id="navDropdown">
+                    <div class="compactLink" onclick="completeAction()">Car Rental</div>
+                    <div class="compactLink" onclick="completeAction()">Lodging</div>
+                    <div class="compactLink" onclick="completeAction()">Rewards</div>
+                    <div class="compactLink" onclick="completeAction()">Log in</div>
+                </div>
             </div>
         </nav>
         <section class="content">
@@ -46,27 +56,27 @@
                             <div>
                                 <div class="formField">
                                     <label class="labelText" for="depart">Depart:</label>
-                                    <input class="formTextField" type="text" name="depart" required />
+                                    <input class="formInput locationTextField" type="text" name="depart" required />
                                 </div>
                                 <div class="formField">
                                     <label class="labelText" for="arrive">Arrive:</label>
-                                    <input class="formTextField" type="text" name="arrive" required />
+                                    <input class="formInput locationTextField" type="text" name="arrive" required />
                                 </div>
                             </div>
                             <div>
                                 <div class="formField">
                                     <label class="labelText" for="departDate">Depart Date:</label>
-                                    <input class="formTextField" type="date" name="departDate" required />
+                                    <input class="formInput dateTextField" type="date" name="departDate" required />
                                 </div>
                                 <div class="formField">
                                     <label class="labelText" for="returnDate">Return Date:</label>
-                                    <input class="formTextField" type="date" name="returnDate" required />
+                                    <input class="formInput dateTextField" type="date" name="returnDate" required />
                                 </div>
                             </div>
                             <div>
                                 <div class="formField">
                                     <label class="labelText" for="passengers">Passengers:</label>
-                                    <input class="formTextField passengersTextField" type="number" name="passengers" required />
+                                    <input class="formInput passengersTextField" type="number" name="passengers" required />
                                 </div>
                                 <div class="formRadio">
                                     <input type="radio" id="oneWay" name="flightType" value="oneWay">
@@ -137,10 +147,13 @@
             </div>
             <div class="footerContainer">
                 <div>
-                    <div class="footerText"><span>&copy;</span> 2024 Northeast Airlines Co. All Rights Reserved.</div>
+                    <div class="contactUs">Contact Us:</div>
+                    <div class="footerEmail">service@northeastairlines.com</div>
+                </div>
+                <div>
+                    <div class="footerText"><span>&copy;</span> 2024 Northeast Airlines Co.</div>
                     <div class="disclaimerText">We sell your personal data for profit.</div>
                 </div>
-                <div class="contactUs">Contact Us: <span class="footerEmail">service@northeastairlines.com</span></div>
             </div>
         </section>
     </body>
