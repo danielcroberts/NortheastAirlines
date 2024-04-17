@@ -1,5 +1,5 @@
 function completeAction() {
-    alert("No internet connection found. Please try again.");
+    alert("No internet connection found. Please ask DJ to fix the website.");
 }
 
 function toggleNav() {
